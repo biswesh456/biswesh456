@@ -23,7 +23,9 @@
             {%- if my_page.title == 'CV' -%}
               <a class="page-link" href="https://drive.google.com/file/d/1SFQx_s1a3YwRb_RU-r1Ecp2OyePdprze/view">{{ my_page.title | escape }}</a>
             {%- else -%}
-              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+              {%- if my_page.title != 'HEAD' -%}
+                <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+              {%- endif -%}
             {%- endif -%}
           {%- endfor -%}
         </div>
