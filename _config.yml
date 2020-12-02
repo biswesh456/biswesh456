@@ -2,8 +2,7 @@ title: Home
 author:
   name: biswesh456
   email: biswesh.mohapatra@iiitb.org
-description:  # this means to ignore newlines until "show_excerpts:"
-  Webpage of Biswesh Mohapatra
+description:  Webpage of Biswesh Mohapatra
 
 show_excerpts: True # set to true to show excerpts on the homepage
 
